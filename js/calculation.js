@@ -22,8 +22,13 @@ function count(number) {
     const playerNumber = number.length;
     document.getElementById('calculate-btn').addEventListener('click', function () {
         const elementValue = getElementNumber('per-player-expenses')
-        const playerExpense = elementValue * playerNumber;
         const playerExpenseTotal = document.getElementById('player-expenses');
+        const playerExpense = elementValue * playerNumber;
+        if (isNaN(playerExpense)) {
+            alert("Inputfield can not be empty!!!   *OR*  Pls input valid number!!!")
+            playerExpenseTotal.innerText = 0;
+            return;
+        }
         playerExpenseTotal.innerText = playerExpense;
     })
 
@@ -35,11 +40,20 @@ function count(number) {
 // grand total calculation
 
 document.getElementById('calculate-total-btn').addEventListener('click', function () {
-    const playerExpenseValue = getElementNumber('player-expenses')
+    const playerExpense = document.getElementById('player-expenses');
+    const playerExpenseString = playerExpense.innerText;
+    const playerExpenseValue = parseInt(playerExpenseString);
     const managerExpense = getElementNumber('manager-expense');
     const coachExpense = getElementNumber('coach-expense');
     const grandtotal = document.getElementById("grand-total");
-    grandtotal.innerText = playerExpenseValue + managerExpense + coachExpense;
+    const updatedGrandTotal = playerExpenseValue + managerExpense + coachExpense;
+    if (isNaN(updatedGrandTotal)) {
+        alert("Inputfield can not be empty!!!   *OR*  Pls input valid number!!!")
+        grandtotal.innerText = 0;
+        return;
+    }
+    grandtotal.innerText = updatedGrandTotal;
+
 
 })
 

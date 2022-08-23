@@ -29,7 +29,7 @@ function addToList(element) {
 
 function getElementNumber(elementId) {
     const element = document.getElementById(elementId);
-    const elementString = element.innerText;
+    const elementString = element.value;
     const elementValue = parseInt(elementString);
     return elementValue;
 }
