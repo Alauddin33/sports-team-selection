@@ -1,6 +1,6 @@
 // playername display section:
 
-const playerArray = [];
+
 
 function display(playerName) {
     const selectedPlayerName = document.getElementById('selected-player-name');
