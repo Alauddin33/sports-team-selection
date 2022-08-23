@@ -6,15 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sports Team Selection</title>
+    <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+    <!-- tailwindcss link -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 
 <body class="bg-zinc-800	">
+    <!-- header section start -->
     <header>
         <div class="text-center p-12 bg-black h-96">
             <h1 class="text-7xl text-red-500 " style="font-family: 'Luxurious Roman', cursive;">Five popular sports
@@ -27,11 +31,14 @@
                 at the most popular
                 sportspeople right here
                 and now and reveal<br> which sporting heroes are piquing our interest the most globally.
-
             </p>
         </div>
     </header>
+    <!-- header section end -->
+
     <main>
+        <!-- card section start -------------------
+        ------------------------------------------>
         <section class="w-3/4 mx-auto mt-5">
             <div class="row row-cols-1 row-cols-md-4 g-4">
                 <div class="col">
@@ -64,18 +71,21 @@
                         </div>
                     </div>
                 </div>
+                <!-- selected player name display section start ---------
+                ---------------------------------------------------------->
                 <div class="col">
                     <div class="card bg-black ">
                         <div class="card-body text-white">
                             <h2 class="text-2xl text-center pb-2">Selected- V</h2>
                             <ol id="selected-player-name" class="text-lg list-decimal text-center pl-2 py-20">
-                                <!-- <li>Cristiano Ronaldo</li> -->
 
                             </ol>
 
                         </div>
                     </div>
                 </div>
+                <!-- selected player name display section end ----
+                ------------------------------------------------>
                 <div class="col">
                     <div class="card bg-black">
                         <img src="images/Mohamed Salah.jpg" class="card-img-top" alt="...">
@@ -106,6 +116,8 @@
                         </div>
                     </div>
                 </div>
+                <!-- badget section start ---------------------------
+                --------------------------------------------------------->
                 <div class="col">
                     <div class="card bg-black">
                         <div class="card-body text-white  ">
@@ -137,15 +149,24 @@
                         </div>
                     </div>
                 </div>
+                <!-- badget section end ----------------------
+                ------------------------------------------------>
             </div>
         </section>
+        <!-- card section end -------------------
+        ------------------------------------------->
     </main>
+
+    <!-- footer start -->
     <footer class="mt-12">
         <hr class="border-2 border-sky-500">
         <div class="text-center text-white p-6 h-20">
             <h2>Copyright @ 2025 All Rights Reserved.</h2>
         </div>
     </footer>
+    <!-- footer end -->
+
+    <!-- javascript link -->
     <script src="js/common.js"></script>
     <script src="js/players.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
